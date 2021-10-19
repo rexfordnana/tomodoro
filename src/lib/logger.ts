@@ -1,9 +1,9 @@
-import { createLogger, stdSerializers } from 'bunyan';
+import {createLogger, stdSerializers} from 'bunyan';
 
-const logger =  createLogger({
-    name: 'tomodoro',
-    level: 'info',
-    serializers: stdSerializers,
-})
+const logger = createLogger({
+  name: 'tomodoro',
+  level: 'info',
+  serializers: stdSerializers,
+});
 
-export default logger
+export default logger;

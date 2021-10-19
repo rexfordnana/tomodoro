@@ -1,28 +1,32 @@
 {
-  "name": "pomodoro",
+  "name": "tomodoro",
   "version": "1.0.0",
   "description": "Productivity time tracker",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "tsc app.ts && node app.js | ./node_modules/.bin/bunyan",
+    "build": "tsc",
+    "dev": "node app.js | ./node_modules/.bin/bunyan",
     "start": "nodemon index.js",
-    "lint": "./node_modules/.bin/eslint . --fix"
+    "lint:fix": "./node_modules/.bin/eslint . --ext .ts --fix",
+    "lint": "./node_modules/.bin/eslint . --ext .ts"
   },
   "author": "rexfordnana",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.13",
     "bunyan": "^1.8.15",
+    "config": "^3.3.6",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
     "@types/bunyan": "^1.8.7",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-shopify": "^35.1.0",
     "mocha": "^9.1.2",
     "nodemon": "^2.0.13"
   }
