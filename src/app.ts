@@ -1,7 +1,6 @@
-import logger from './lib/logger.ts';
+import logger from './lib/logger';
 
 const log = logger.child({test: 'Testing stuff'});
-
 
 const names = ["Alice", "Bob", "Eve"];
 
